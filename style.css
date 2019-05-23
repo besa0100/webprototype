@@ -1,0 +1,86 @@
+/* GENERLLA INSTÄLLNINGAR */
+
+
+body {
+    margin: 0;
+}
+
+    {
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    max-width: 25rem;
+    margin-top: 1rem;
+    padding: 1rem;
+}
+
+
+
+/* GENERELLA INSTÄLLNIGAR SLUT */
+
+
+/* LOG IN */
+
+
+#login .top {
+    background-color: #EA5045;
+    width: 31rem;
+    height: 25rem;
+}
+
+#login .logo {
+    position: absolute;
+    width: 7rem;
+    height: 4rem;
+    top: 8rem;
+    left: 11rem;
+
+}
+
+#login .bot {
+    background-color: #FAF7F7;
+    width: 31rem;
+    height: 40rem;
+}
+
+#login .brugernavn{
+    display: flex;
+    justify-content: center;
+    width: 33rem;
+    height: 7rem
+
+}
+
+#login .adgangskode{
+    display: flex;
+    justify-content: center;
+    width: 33rem;
+    height: 7rem
+
+}
+
+#login .continue{
+    display: flex;
+    justify-content: center;
+    width: 33rem;
+    height: 7rem
+
+}
+
+#login .facebooklogin{
+    display: flex;
+    justify-content: center;
+    width: 33rem;
+    height: 7rem
+
+}
+
+
+
+
+
+
+
+/* LOG IN SLUT */
