@@ -79,8 +79,72 @@ img {
 
 
 
-
-
-
-
 /* LOG IN SLUT */
+
+/* FORSIDE START */
+
+body {
+    background-color: #DEDCDB;
+}
+
+header{
+    background-color: #EA5045;
+
+}
+
+
+#menuknap {
+    color: white;
+    display: inline-block
+    font-family: sans-serif;
+    padding: 1rem 1rem 0 1rem;
+    font-size: 2rem;
+}
+
+
+#forside .top_forside{
+    display: flex;
+
+
+}
+
+#forside .material {
+  margin: 10px;
+
+}
+
+#forside .skema{
+    margin: 10px;
+
+}
+
+#forside .notifikationer{
+    margin: 10px;
+
+}
+
+#forside .middle_forside {
+    display: flex;
+
+}
+
+#forside .techlounge{
+    margin: 10px;
+}
+
+#forside .mail {
+    margin 10px;
+    width: 13rem;
+
+}
+
+
+
+
+
+
+
+
+
+
+
