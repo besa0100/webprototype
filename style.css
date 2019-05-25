@@ -101,7 +101,6 @@ header{
     font-size: 2rem;
 }
 
-
 #forside .top_forside{
     display: flex;
 
@@ -137,6 +136,12 @@ header{
     width: 13rem;
 
 }
+
+#forside .favoriter{
+    margin: 10px;
+
+}
+
 
 
 
