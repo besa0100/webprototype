@@ -4,54 +4,58 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Web Prototype (Login)</title>
     <link rel="stylesheet" href="style.css">
     <meta name="robots" content="noindex">
 </head>
 
+<body id="login">
+    <div class="background_login">
+        <div class="redbox">
 
-<body>
-    <header>
-        <nav>
-            <div id="menuknap">☰</div>
-            <ul id="menu" class="hidden">
-                <li><a href="index_login.html">LOG IN</a>
-                </li>
-                <li><a href="index_forside.html">FORSIDE</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <section id="login">
-        <div class="top">
-            <div class="logo">
-                <img src="ikoner_login/kealogo1@3x.png">
-            </div>
-        </div>
-        <div class="bot">
-            <div class="brugernavn">
-                <img src="ikoner_login/inputnamn@3x.png">
-            </div>
-
-            <div class="adgangskode">
-                <img src="ikoner_login/inputkod@3x.png">
-            </div>
-
-            <br><br><br><br>
-
-            <div class="continue">
-                <img src="ikoner_login/Continue@3x.png">
-            </div>
-
-            <div class="facebooklogin">
-                <img src="ikoner_login/facebooklogin@3x.png">
+            <div class="kea">
+                <img class="kea_logo" src="logininkoner/kealogo1.png" alt="login">
             </div>
         </div>
 
 
+        <form id="loginform" class="loginform" action="index_forside.html">
+            <div class="formgroup1">
+
+                <img class="userlog1" src="logininkoner/bruger.png" alt="login">
+                <input class="input2" type="text" placeholder="Brugernavn">
+            </div>
+
+            <div class="formgroup2">
+                <div class="logbutton">
+                    <img class="userlog2" src="logininkoner/login.png" alt="login">
+                </div>
+                <input class="input3" type="password" placeholder="Password">
+            </div>
+
+            <div class="formgroup3">
+                <a href="index_forside.html"><img class="unilog" src="logininkoner/continue4.png" alt="facebook"></a>
+                <input class="input4" type="submit" value="Login">
+            </div>
+
+            <div class="formgroup4">
+
+                <a href="index_forside.html"><img class="unilog" src="logininkoner/facebook5.png" alt="facebook"></a>
+                <input class="input1" type="submit" value>
+            </div>
 
 
-    </section>
+
+        </form>
+
+        <div class="contentsplit">
+            <div class="split">
+            </div>
+        </div>
+
+
+
+    </div>
     <script src="script.js"></script>
 </body>
 

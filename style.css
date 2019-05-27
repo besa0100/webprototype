@@ -24,56 +24,193 @@ img {
 /* LOG IN */
 
 
-#login .top {
-    background-color: #EA5045;
-    width: 31rem;
-    height: 25rem;
-}
-
-#login .logo {
-    position: absolute;
-    width: 7rem;
-    height: 4rem;
-    top: 8rem;
-    left: 11rem;
-
-}
-
-#login .bot {
+.background_login {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     background-color: #FAF7F7;
-    width: 31rem;
-    height: 40rem;
-}
-
-#login .brugernavn{
-    display: flex;
-    justify-content: center;
-    width: 33rem;
-    height: 7rem
+    height: 700px;
+    width: 320px;
 
 }
 
-#login .adgangskode{
-    display: flex;
-    justify-content: center;
-    width: 33rem;
-    height: 7rem
+.redbox a {
+    padding: ;
+    border: 100px;
+    width: 100px;
+    text-align: center;
+    color: white;
+    border-width: 0px;
+    border-style: solid;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 3em;
 
 }
 
-#login .continue{
+#login .kea {
+    background-color: #EA5045;
+    width: 320px;
+    height: 180px;
+    padding: ;
+    flex-direction: column;
     display: flex;
     justify-content: center;
-    width: 33rem;
-    height: 7rem
+    align-items: center;
 
 }
 
-#login .facebooklogin{
+#login .kea_logo {
+    width: 100px;
+    height: 40px;
+    padding-top: 0;
+}
+
+#loginform {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+form {
+    display: block;
+    margin-top: 0em;
+}
+
+.formgroup1 {
+    position: absolute;
+    left: 2rem;
+    top: 20rem;
+}
+
+#loging a {
+    text-decoration: none;
+    margin: 0.8rem 1rem 0.5rem 1rem;
+    padding: 0.2rem;
+    color: white;
+}
+
+a,
+h1,
+h2,
+h3,
+h4,
+p,
+label,
+input,
+table {
+    font-family: Arial;
+    font-weight: normal;
+}
+
+.unilog {
+    position: absolute;
+    left: -1rem;
+    top: -2rem;
+}
+
+#loginform input {
+    width: 17rem;
+    height: 2.6rem;
+    border-radius: 0%;
+    border-width: 0px;
+}
+
+
+
+.formgroup2 {
+    position: absolute;
+    left: 2rem;
+    top: 24rem;
+}
+
+div {
+    display: block;
+}
+
+.userlog1 {
+    position: absolute;
+    width: 2rem;
+    left: 220px;
+    top: 6px;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+#loginform input {
+    width: 17rem;
+    height: 2.6rem;
+    border-radius: 0%;
+    border-width: 0px;
+}
+
+.input2,
+.input3 {
+    background-color: purple color: white;
+}
+
+.formgroup3 {
+    position: absolute;
+    left: 2rem;
+    top: 28rem;
+}
+
+
+div {
+    display: block;
+}
+
+.userlog2 {
+    position: absolute;
+    width: 2.1rem;
+    left: 218px;
+    top: 2.5px;
+    padding-top: 0;
+    margin-top: 0;
+    padding-bottom: 0;
+}
+
+
+.formgroup4 {
+    position: absolute;
+    left: 2rem;
+    top: 32rem;
+    background-color: #EA5045;
+}
+
+div {
+    display: block;
+}
+
+#loginform input {
+    width: 17rem;
+    height: 2.6rem;
+    border-radius: 0%;
+    border-width: 0px;
+}
+
+
+.contentsplit {
+    width: 180px;
+    height: 60px;
+    padding: 20px 0px 0px 0px;
+    flex-direction: column;
     display: flex;
     justify-content: center;
-    width: 33rem;
-    height: 7rem
+    align-items: center;
+
+}
+
+.boxsplit {
+    width: 20px;
+    color: lightgrey;
+    border-style: solid;
+    border-radius: 25px;
+    border-width: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
 
 }
 
@@ -89,57 +226,230 @@ body {
 
 header{
     background-color: #EA5045;
-
 }
-
 
 #menuknap {
     color: white;
-    display: inline-block
-    font-family: sans-serif;
-    padding: 1rem 1rem 0 1rem;
+    display: inline-block font-family: sans-serif;
+    padding: 0.5rem 0.5rem 0.5rem;
     font-size: 2rem;
+    padding-left: 92vw;
+    padding-top: 0;
 }
 
-#forside .top_forside{
-    display: flex;
+#kealgo {
+    height: 5vw;
+    width: 20vw;
 
+}
+
+#forside .top_forside {
+    display: flex;
+    position: relative;
+    top: -25px;
+    left: -15px;
 
 }
 
 #forside .material {
-  margin: 10px;
-
-}
-
-#forside .skema{
     margin: 10px;
 
 }
 
-#forside .notifikationer{
+#forside .skema {
     margin: 10px;
 
 }
 
-#forside .middle_forside {
+#forside .notifikationer {
+    margin: 10px;
+
+}
+
+#forside .mellem_forside {
     display: flex;
-
+    position: relative;
+    top: -75px;
+    left: -15px;
 }
 
-#forside .techlounge{
+#forside .techlounge {
     margin: 10px;
 }
 
 #forside .mail {
-    margin 10px;
-    width: 13rem;
+    margin: 10px;
+    height: 49.2vw;
+    width: 49.2vw;
+}
+
+#forside .mellem_forside_to {
+    display: flex;
+    position: relative;
+    top: -150px;
+    left: -15px;
+}
+
+#forside .fav {
+    margin: 10px;
+}
+
+#forside .grupper {
+    margin: 10px;
+}
+
+#forside .chat {
+    margin: 10px;
+}
+
+#forside .mellem_forside_tre {
+
+    position: relative;
+    top: -200px;
+    left: -15px;
+}
+
+#forside .soeg {
+    margin: 10px;
+    height: 28vw;
+    width: 28vw;
+    position: relative;
+    top: 5px;
+}
+
+#forside .afleveringer {
+    margin: 10px;
+    height: 28vw;
+    width: 28vw;
+    position: relative;
+    top: 14px;
+}
+
+
+#forside .aktuelt {
+    margin: 10px;
+    height: 60vw;
+    width: 60vw;
+    position: relative;
+    left: 168px;
+    top: -293px;
+    padding-top: 0;
+}
+
+#forside .bottom {
+    display: flex;
+    position: relative;
+    top: -450px;
+    left: -15px;
+}
+
+#forside .xet {
+    margin: 10px;
+}
+
+#forside .xto {
+    margin: 10px;
+}
+
+#forside .xtre {
+    margin: 10px;
+}
+
+/* FORSIDE SLUT */
+
+/* AFLEVERINGSSIDE CSS */
+#white {
+    background-color: white;
+}
+
+.afleveringer {
+    margin: 10px;
+}
+
+.afleveringer2 {
+    margin: 10px;
+    color: #EA5045;
+    font-size: 0.7rem;
+}
+
+#box1 {
+    margin: 10px;
+    height: 20vw;
+    width: 95vw;
+    background-color: rgba(222, 220, 219, 0.42);
+}
+
+.opgave_navn {
+    margin: 10px;
+    position: relative;
+    top: 10px;
+    font-size: 0.8rem;
 
 }
 
-#forside .favoriter{
+.opgave_tekst {
     margin: 10px;
+    position: relative;
+    top: 10px;
+    font-size: 0.6rem;
+}
 
+.pin {
+    display: flex;
+    width: 50px;
+    height: 100px;
+    position: relative;
+    left: 400px;
+    top: -40px;
+
+}
+
+.arrow {
+    display: flex;
+    width: 40px;
+    height: 80px;
+    position: relative;
+    left: 410px;
+    top: -40px;
+
+
+}
+
+
+
+#box2 {
+    margin: 10px;
+    height: 20vw;
+    width: 95vw;
+    background-color: rgba(222, 220, 219, 0.42);
+}
+
+#box3 {
+    margin: 10px;
+    height: 20vw;
+    width: 95vw;
+    background-color: rgba(222, 220, 219, 0.42);
+}
+
+#box4 {
+    margin: 10px;
+    height: 20vw;
+    width: 95vw;
+    background-color: rgba(222, 220, 219, 0.42);
+}
+
+#box5 {
+    margin: 10px;
+    height: 20vw;
+    width: 95vw;
+    background-color: rgba(222, 220, 219, 0.42);
+}
+
+#box6 {
+    margin: 10px;
+    height: 20vw;
+    width: 95vw;
+    background-color: rgba(222, 220, 219, 0.42);
 }
 
 
