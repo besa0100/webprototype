@@ -10,27 +10,60 @@
 </head>
 
 <body>
-   <header>
-      <nav>
-      <div class="burgermenu">
-                <div id="kealgo"> <img src="ikoner_forside/kealogo1.png"></div>
-                <div id="menuknap">☰</div>
+    <header id="navigation">
+        <nav role='navigation'>
+            <div id="kealgo">
+            <img src="logininkoner/kealogo1.png"></div>
+            <div id="menuToggle">
+                <!--
+    A fake / hidden checkbox is used as click reciever,
+    so you can use the :checked selector on it.
+    -->
+                <input type="checkbox" />
 
+                <!--
+    Some spans to act as a hamburger.
 
-                <ul id="menu" class="hidden">
-                    <li><a href="index_forside.html">Aktuelt</a></li>
-                    <li><a href="afleveringer.html">Afleveringer</a></li>
+    -->
+                <span></span>
+                <span></span>
+                <span></span>
 
-                    <div class="menu_footer">
-                        <li><a href="index_login.html">Log ud</a></li>
+                <!--
+    Too bad the menu has to be inside of the button
+    but hey, it's pure CSS magic.
+    -->
+                <ul id="menu">
+                   <div class="keal0g0">
+                       <img src="ikoner_forside/kealogo1.png">
+                   </div>
+                    <a href="index_forside.html">
+                        <li>Aktuelt</li>
+                    </a>
+                    <a href="index_forside.html">
+                        <li>Skema</li>
+                    </a>
+                    <a href="index_forside.html">
+                        <li>Afleveringer</li>
+                    </a>
+                    <a href="index_forside.html">
+                        <li>Materialer</li>
+                    </a>
+                    <a href="index_forside.html">
+                        <li>Chat</li>
+                    </a>
+                    <a href="index_forside.html">
+                        <li>Indstillinger</li>
+                    </a>
+                    <div id="goback">
+                        <a href="index_login.html">
+                            <li>Log ud</li>
+                        </a>
                     </div>
                 </ul>
             </div>
-
         </nav>
-
     </header>
-
     <section id="forside">
         <div class="top_forside">
             <div class="material">

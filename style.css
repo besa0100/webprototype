@@ -16,9 +16,194 @@ img {
     padding: 1rem;
 }
 
+p,
+h1,
+h2,
+h3 {
+    font-family: 'Roboto', sans-serif;
+}
+
 
 
 /* GENERELLA INSTÄLLNIGAR SLUT */
+
+/* BURGER MENU */
+
+body {
+    margin: 0;
+    padding: 0;
+
+    /* make it look decent enough */
+
+    font-family: "Avenir Next", "Avenir", sans-serif;
+
+    overflow-x: hidden;
+    /* needed because hiding the menu on the right side is not perfect,  */
+}
+
+.keal0g0 {
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    top: 90px;
+    right: 240px;
+}
+
+#navigation a {
+    text-decoration: none;
+    color: #f58e81;
+
+    transition: color 0.3s ease;
+    display: flex;
+    justify-content: center;
+}
+
+#navigation a:hover {
+    color: tomato;
+}
+
+#goback {
+    position: absolute;
+    top: 615px;
+    height: 80px;
+    width: 450px;
+    right: 70px;
+    background-color: #EA847C;
+}
+
+#goback a {
+    color: white;
+    position: absolute;
+    top: 20px;
+    left: 200px;
+}
+
+#menuToggle {
+    display: block;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+
+    z-index: 1;
+
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+#menuToggle input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+
+    cursor: pointer;
+
+    opacity: 0;
+    /* hide this */
+    z-index: 2;
+    /* and place it over the hamburger */
+
+    -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span {
+    display: block;
+    width: 27px;
+    height: 3px;
+    margin-bottom: 5px;
+    position: relative;
+
+    background: #ffffff;
+    border-radius: 3px;
+
+    z-index: 1;
+
+    transform-origin: 4px 0px;
+
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+        background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+        opacity 0.55s ease;
+}
+
+#menuToggle span:first-child {
+    transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+}
+
+/*
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #ffffff;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2) {
+    opacity: 1;
+    transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu {
+    position: absolute;
+    width: 450px;
+    height: 600px;
+    margin: -100px 0 0 0;
+    padding: 50px;
+    padding-top: 190px;
+    right: -140px;
+
+    background: #3f3140;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    /* to stop flickering of text in safari */
+
+    transform-origin: 0% 0%;
+    transform: translate(100%, 0);
+
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+}
+
+#menu li {
+    padding: 10px 0;
+    font-size: 22px;
+}
+
+/*
+ * And let's fade it in from the left
+ */
+#menuToggle input:checked ~ ul {
+    transform: scale(1.0, 1.0);
+    opacity: 1;
+}
+
+
+
+/* BURGER MENU SLUT*/
 
 
 /* LOG IN */
@@ -29,8 +214,8 @@ img {
     flex-wrap: wrap;
     justify-content: center;
     background-color: #FAF7F7;
-    height: 700px;
-    width: 320px;
+    height: 1200px;
+    width: 700px;
 
 }
 
@@ -50,7 +235,7 @@ img {
 
 #login .kea {
     background-color: #EA5045;
-    width: 320px;
+    width: 1200px;
     height: 180px;
     padding: ;
     flex-direction: column;
@@ -60,15 +245,19 @@ img {
 
 }
 
-#login .kea_logo {
+#login .kealogo1 {
     width: 100px;
-    height: 40px;
+    height: 30px;
     padding-top: 0;
+    position: absolute;
+    right: 120px;
 }
 
 #loginform {
     display: flex;
     flex-wrap: wrap;
+    position: absolute;
+    left: 20px;
 }
 
 form {
@@ -89,7 +278,7 @@ form {
     color: white;
 }
 
-a,
+#login #afleveringsside #forside a,
 h1,
 h2,
 h3,
@@ -215,7 +404,6 @@ div {
 }
 
 
-
 /* LOG IN SLUT */
 
 /* FORSIDE START */
@@ -226,6 +414,7 @@ body {
 
 header{
     background-color: #EA5045;
+    height: 100px;
 }
 
 #menuknap {
@@ -240,6 +429,8 @@ header{
 #kealgo {
     height: 5vw;
     width: 20vw;
+    position: absolute;
+    top: 15px;
 
 }
 
@@ -279,14 +470,14 @@ header{
 
 #forside .mail {
     margin: 10px;
-    height: 49.2vw;
-    width: 49.2vw;
+    height: 41vw;
+    width: 53.5vw;
 }
 
 #forside .mellem_forside_to {
     display: flex;
     position: relative;
-    top: -150px;
+    top: -125px;
     left: -15px;
 }
 
@@ -305,22 +496,22 @@ header{
 #forside .mellem_forside_tre {
 
     position: relative;
-    top: -200px;
+    top: -180px;
     left: -15px;
 }
 
 #forside .soeg {
     margin: 10px;
-    height: 28vw;
-    width: 28vw;
+    height: 29vw;
+    width: 29vw;
     position: relative;
     top: 5px;
 }
 
 #forside .afleveringer {
     margin: 10px;
-    height: 28vw;
-    width: 28vw;
+    height: 29vw;
+    width: 29vw;
     position: relative;
     top: 14px;
 }
@@ -328,18 +519,18 @@ header{
 
 #forside .aktuelt {
     margin: 10px;
-    height: 60vw;
-    width: 60vw;
+    height: 62vw;
+    width: 62vw;
     position: relative;
-    left: 168px;
-    top: -293px;
+    left: 125px;
+    top: -232.5px;
     padding-top: 0;
 }
 
 #forside .bottom {
     display: flex;
     position: relative;
-    top: -450px;
+    top: -410px;
     left: -15px;
 }
 
@@ -375,7 +566,7 @@ header{
 #box1 {
     margin: 10px;
     height: 20vw;
-    width: 95vw;
+    width: 92vw;
     background-color: rgba(222, 220, 219, 0.42);
 }
 
@@ -391,6 +582,12 @@ header{
     margin: 10px;
     position: relative;
     top: 10px;
+    font-size: 0.6rem;
+}
+.opgave_tekst1 {
+    margin: 10px;
+    position: relative;
+    top: -19px;
     font-size: 0.6rem;
 }
 
@@ -420,35 +617,95 @@ header{
 #box2 {
     margin: 10px;
     height: 20vw;
-    width: 95vw;
+    width: 92vw;
     background-color: rgba(222, 220, 219, 0.42);
 }
 
-#box3 {
+/** EXPANDING BOX CSS **/
+
+/* Style the button that is used to open and close the collapsible content */
+
+
+/** BOX 3 SOM SKA EXPAND **/
+.collapsible {
+    background-color: rgba(222, 220, 219, 0.42);
+    color: #444;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
     margin: 10px;
     height: 20vw;
-    width: 95vw;
+    width: 92vw;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.collapsible:hover {
     background-color: rgba(222, 220, 219, 0.42);
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+    display: none;
+    overflow: hidden;
+    margin: 3vw;
+    height: 43vw;
+    width: 92vw;
+    background-color: #eeeeee;
+}
+
+.collapsible:after {
+    content: '\02795';
+    /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    /*    background-color: rgba(222, 220, 219, 0.42);*/
+    float: right;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    position: absolute;
+    left: 330px;
+    bottom: 135px;
+}
+
+.active:after {
+    content: "\2796";
+    margin-right: 5px;
+    margin-bottom: 5px;
+    /* Unicode character for "minus" sign (-) */
+}
+
+b {
+    margin-bottom: 5px;
+}
+
+/** EXPANDING BOX SLUT **/
+
+.fil{
+    margin: 10px;
+    font-size: 0.8rem;
 }
 
 #box4 {
     margin: 10px;
     height: 20vw;
-    width: 95vw;
+    width: 92vw;
     background-color: rgba(222, 220, 219, 0.42);
 }
 
 #box5 {
     margin: 10px;
     height: 20vw;
-    width: 95vw;
+    width: 92vw;
     background-color: rgba(222, 220, 219, 0.42);
 }
 
 #box6 {
     margin: 10px;
     height: 20vw;
-    width: 95vw;
+    width: 92vw;
     background-color: rgba(222, 220, 219, 0.42);
 }
 

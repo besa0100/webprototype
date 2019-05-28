@@ -11,10 +11,58 @@
 </head>
 
 <body id="white">
-    <header>
-        <nav>
-            <div id="kealgo"> <img src="logininkoner/kealogo1.png"></div>
-            <div id="menuknap">☰</div>
+    <header id="navigation">
+        <nav role='navigation'>
+            <div id="kealgo">
+                <img src="logininkoner/kealogo1.png"></div>
+            <div id="menuToggle">
+                <!--
+    A fake / hidden checkbox is used as click reciever,
+    so you can use the :checked selector on it.
+    -->
+                <input type="checkbox" />
+
+                <!--
+    Some spans to act as a hamburger.
+
+    -->
+                <span></span>
+                <span></span>
+                <span></span>
+
+                <!--
+    Too bad the menu has to be inside of the button
+    but hey, it's pure CSS magic.
+    -->
+                <ul id="menu">
+                    <div class="keal0g0">
+                        <img src="ikoner_forside/kealogo1.png">
+                    </div>
+                    <a href="index_forside.html">
+                        <li>Aktuelt</li>
+                    </a>
+                    <a href="index_forside.html">
+                        <li>Skema</li>
+                    </a>
+                    <a href="index_forside.html">
+                        <li>Afleveringer</li>
+                    </a>
+                    <a href="index_forside.html">
+                        <li>Materialer</li>
+                    </a>
+                    <a href="index_forside.html">
+                        <li>Chat</li>
+                    </a>
+                    <a href="index_forside.html">
+                        <li>Indstillinger</li>
+                    </a>
+                    <div id="goback">
+                        <a href="index_login.html">
+                            <li>Log ud</li>
+                        </a>
+                    </div>
+                </ul>
+            </div>
         </nav>
     </header>
 
@@ -48,10 +96,24 @@
             <h2><b>Tidligare afleveringer</b></h2>
         </div>
         <div id="box3">
-            <h3 class="opgave_navn"><b>Tema 1</b></h3>
-            <p class="opgave_tekst"> Grundläggande Web</p>
-
-
+            <button class="collapsible">
+                <h3 class="opgave_navn"><b>Tema 1</b></h3><br>
+                <p class="opgave_tekst1">Grundlæggende Web</p>
+            </button>
+            <div class="content">
+                <a>
+                    <h3 class="opgave_navn"><b>04.01.01 - Opgavebeskrivelse - Design Sprint</b></h3>
+                    <p class="fil">Dit filnavn</p>
+                </a>
+                <a>
+                    <h3 class="opgave_navn"><b>04.01.01 - Opgavebeskrivelse - Design Sprint</b></h3>
+                    <p class="fil">Dit filnavn</p>
+                </a>
+                <a>
+                    <h3 class="opgave_navn"><b>04.01.01 - Opgavebeskrivelse - Design Sprint</b></h3>
+                    <p class="fil">Dit filnavn</p>
+                </a>
+            </div>
         </div>
         <div id="box4">
             <h3 class="opgave_navn"><b>Tema 2</b></h3>
