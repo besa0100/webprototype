@@ -332,9 +332,8 @@ div {
     border-width: 0px;
 }
 
-.input2,
-.input3 {
-    background-color: purple color: white;
+.input4, .input1{
+    background-color: #FAF7F7;
 }
 
 .formgroup3 {
@@ -363,7 +362,6 @@ div {
     position: absolute;
     left: 2rem;
     top: 32rem;
-    background-color: #EA5045;
 }
 
 div {
